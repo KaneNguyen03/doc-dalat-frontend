@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* === DOC Da Lat — Quiet Luxury Palette === */
+
+    /* Cream ivory background inspired by misty Da Lat mornings */
+    --background: 40 33% 96%;
+    --foreground: 160 15% 12%;
+
+    /* Cards: slightly warmer than background */
+    --card: 40 30% 98%;
+    --card-foreground: 160 15% 12%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 160 15% 12%;
+
+    /* Primary: Deep pine forest green */
+    --primary: 158 25% 18%;
+    --primary-foreground: 40 33% 96%;
+
+    /* Secondary: Warm sage */
+    --secondary: 140 12% 90%;
+    --secondary-foreground: 160 15% 12%;
+
+    /* Muted: Soft fog */
+    --muted: 40 15% 92%;
+    --muted-foreground: 160 8% 45%;
+
+    /* Accent: Earthy terracotta */
+    --accent: 16 45% 55%;
+    --accent-foreground: 40 33% 96%;
+
+    /* Destructive */
+    --destructive: 0 65% 48%;
+    --destructive-foreground: 40 33% 96%;
+
+    --border: 40 18% 87%;
+    --input: 40 18% 87%;
+    --ring: 158 25% 18%;
+    --radius: 0.375rem;
+
+    /* === Extended Design Tokens === */
+
+    /* Pine forest deep */
+    --pine: 158 25% 18%;
+    --pine-light: 155 18% 30%;
+    --pine-mist: 150 12% 85%;
+
+    /* Warm terracotta / clay */
+    --terra: 16 45% 55%;
+    --terra-light: 18 35% 72%;
+    --terra-muted: 18 20% 88%;
+
+    /* Cream spectrum */
+    --cream: 40 33% 96%;
+    --cream-warm: 35 40% 92%;
+    --cream-deep: 32 30% 85%;
+
+    /* Charcoal text */
+    --ink: 160 15% 12%;
+    --ink-soft: 160 8% 35%;
+    --ink-muted: 160 6% 55%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(
+      180deg,
+      hsl(158 25% 18% / 0.7) 0%,
+      hsl(158 25% 18% / 0.3) 50%,
+      hsl(40 33% 96% / 0.1) 100%
+    );
+    --gradient-mist: linear-gradient(
+      180deg,
+      hsl(40 33% 96%) 0%,
+      hsl(150 12% 85% / 0.3) 100%
+    );
+    --gradient-warm: linear-gradient(
+      135deg,
+      hsl(40 33% 96%) 0%,
+      hsl(35 40% 92%) 100%
+    );
+
+    /* Shadows */
+    --shadow-soft: 0 4px 24px -4px hsl(160 15% 12% / 0.06);
+    --shadow-elevated: 0 12px 40px -8px hsl(160 15% 12% / 0.1);
+    --shadow-glow-pine: 0 0 40px hsl(158 25% 18% / 0.12);
+    --shadow-glow-terra: 0 0 30px hsl(16 45% 55% / 0.15);
+
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .divider-editorial {
+    width: 48px;
+    height: 1px;
+    background: hsl(var(--terra));
+    opacity: 0.6;
+  }
+}
