@@ -26,13 +26,13 @@ export function Footer() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <h2 className="text-headline font-serif text-foreground mb-4">
-                San sang cham vao<br />
-                <span className="italic text-pine-light">Da Lat nguyen ban</span>?
+                Sẵn sàng chạm vào<br />
+                <span className="italic text-pine-light">Đà Lạt nguyên bản</span>?
               </h2>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-body-lg font-sans text-ink-soft mb-10">
-                Dang ky Early Access de la nhung nguoi dau tien trai nghiem DOC.
+                Đăng ký nhận truy cập sớm để là những người đầu tiên trải nghiệm DOC.
               </p>
             </FadeIn>
 
@@ -43,7 +43,7 @@ export function Footer() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email cua ban"
+                    placeholder="Email của bạn"
                     required
                     className="flex-1 px-5 py-3.5 bg-card border border-border rounded-sm font-sans text-body text-foreground placeholder:text-ink-muted focus:outline-none focus:border-pine/50 transition-colors"
                   />
@@ -51,7 +51,7 @@ export function Footer() {
                     type="submit"
                     className="px-6 py-3.5 bg-primary text-primary-foreground font-sans text-caption uppercase font-medium tracking-wide rounded-sm hover:bg-pine-light transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap"
                   >
-                    Dang ky
+                    Đăng ký
                     <ArrowRight size={14} />
                   </button>
                 </form>
@@ -62,7 +62,7 @@ export function Footer() {
                   className="px-6 py-4 bg-pine/5 border border-pine/20 rounded-sm max-w-md mx-auto"
                 >
                   <p className="font-sans text-body text-pine">
-                    Tuyet voi! Chung toi se gui thong tin cho ban som nhat.
+                    Tuyệt vời! Chúng tôi sẽ gửi thông tin cho bạn sớm nhất.
                   </p>
                 </motion.div>
               )}
@@ -78,12 +78,12 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <span className="font-serif text-lg text-foreground">DOC</span>
               <span className="text-caption font-sans text-ink-muted">
-                Da Lat Original Curated
+                Đà Lạt Original Curated
               </span>
             </div>
 
             <p className="text-caption font-sans text-ink-muted">
-              2025 DOC. Duoc tao voi tinh yeu danh cho Da Lat.
+              2025 DOC. Được tạo với tình yêu dành cho Đà Lạt.
             </p>
           </div>
         </div>

@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { label: 'Ve DOC', href: '#about' },
-  { label: 'Cach hoat dong', href: '#how-it-works' },
-  { label: 'Kham pha', href: '#explore' },
+  { label: 'Về DOC', href: '#about' },
+  { label: 'Cách hoạt động', href: '#how-it-works' },
+  { label: 'Khám phá', href: '#explore' },
   { label: 'DOC Club', href: '#club' },
 ]
 
@@ -23,7 +23,7 @@ export function Navbar() {
               DOC
             </span>
             <span className="hidden sm:inline text-overline uppercase text-ink-muted font-sans tracking-widest mt-1">
-              Da Lat Original Curated
+              Đà Lạt Original Curated
             </span>
           </a>
 
@@ -42,7 +42,7 @@ export function Navbar() {
               href="#waitlist"
               className="ml-4 px-5 py-2.5 bg-primary text-primary-foreground text-caption uppercase font-sans font-medium rounded-sm hover:bg-pine-light transition-colors duration-300"
             >
-              Tham gia Waitlist
+              Đăng ký danh sách chờ
             </a>
           </div>
 
@@ -81,7 +81,7 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
               className="block text-center mt-4 px-5 py-3 bg-primary text-primary-foreground text-caption uppercase font-sans font-medium rounded-sm"
             >
-              Tham gia Waitlist
+              Đăng ký danh sách chờ
             </a>
           </div>
         </motion.div>

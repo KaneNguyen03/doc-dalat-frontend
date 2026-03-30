@@ -5,23 +5,23 @@ import { AlertTriangle, DollarSign, MessageSquareWarning, Search } from 'lucide-
 const problems = [
   {
     icon: AlertTriangle,
-    title: 'Thuc pham kem chat luong',
-    description: 'Quan an dai tra phuc vu do an oi thiu, che bien mat ve sinh tai cac khu du lich dong duc.',
+    title: 'Ẩm thực mất chất',
+    description: 'Nhiều quán ăn du lịch phục vụ cẩu thả, giá cao và mất chất địa phương.',
   },
   {
     icon: DollarSign,
-    title: 'Chat chem gia ca',
-    description: 'Gia phong, gia an, gia dich vu bi day len gap 3-5 lan vao mua cao diem, khong minh bach.',
+    title: 'Chặt chém giá cả',
+    description: 'Giá phòng, giá ăn, giá dịch vụ bị đẩy lên gấp 3-5 lần vào mùa cao điểm, không minh bạch.',
   },
   {
     icon: MessageSquareWarning,
-    title: 'Rac thong tin & Seeding',
-    description: 'Hang ngan bai review gia, seeding quang cao tran lan tren TikTok va Facebook khien ban khong biet dau la that.',
+    title: 'Rác thông tin & quảng cáo trá hình',
+    description: 'Hàng ngàn bài review giả và seeding quảng cáo tràn lan trên mạng khiến bạn không biết đâu là thật.',
   },
   {
     icon: Search,
-    title: 'Qua tai lua chon',
-    description: 'Mat hang gio cuon tren mang de loc dia diem that su co chat luong giua bien thong tin nhieu loan.',
+    title: 'Quá tải lựa chọn',
+    description: 'Mặt hàng gió cuốn trên mạng, khó lọc địa điểm thực sự có chất lượng giữa biển thông tin nhiễu loạn.',
   },
 ]
 
@@ -40,14 +40,14 @@ export function Problem() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="text-headline font-serif text-foreground mb-6">
-              Du lich Da Lat dang<br />
-              <span className="italic text-terra">bi pha vo</span>
+              Du lịch Đà Lạt đang<br />
+              <span className="italic text-terra">mất dần bản sắc</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-body-lg font-sans text-ink-soft max-w-xl mx-auto">
-              Da Lat tuyet dep nhung dang bi thuong mai hoa qua muc.
-              Nhung nguoi yeu Da Lat that su xung dang co mot cach tiep can tot hon.
+              Đà Lạt có sương mù, hồ và rừng thông, nhưng quá tải du lịch và thương mại hoá đang xói mòn giá trị thật sự.
+              Những người yêu Đà Lạt xứng đáng được tiếp cận những trải nghiệm chân thực hơn.
             </p>
           </FadeIn>
         </div>

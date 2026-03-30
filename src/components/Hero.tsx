@@ -21,7 +21,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src="/images/hero-dalat.png"
-          alt="Rung thong Da Lat trong suong som"
+          alt="Rừng thông Đà Lạt trong sương sớm"
           className="w-full h-full object-cover"
         />
         {/* Gradient Overlay */}
@@ -38,23 +38,23 @@ export function Hero() {
         <div className="max-w-2xl">
           <FadeIn delay={0.2}>
             <p className="text-overline uppercase font-sans text-terra-light tracking-widest mb-6">
-              Mot cach moi de kham pha Da Lat
+              Một cách mới để khám phá Đà Lạt
             </p>
           </FadeIn>
 
           <FadeIn delay={0.4}>
             <h1 className="text-display font-serif text-cream mb-6">
-              Cham vao<br />
-              <span className="italic text-terra-light">Da Lat</span>
-              <br />nguyen ban
+              Chạm vào<br />
+              <span className="italic text-terra-light">Đà Lạt</span>
+              <br />nguyên bản
             </h1>
           </FadeIn>
 
           <FadeIn delay={0.6}>
             <p className="text-body-lg font-sans text-cream-deep/90 max-w-lg mb-10 leading-relaxed">
-              Nen tang du lich giam tuyen duy nhat danh cho Da Lat.
-              AI + chuyen gia dia phuong giup ban loc bo bay du lich,
-              chi giu lai nhung trai nghiem dang gia nhat.
+              Nền tảng du lịch giảm tuyển dành cho Đà Lạt — cao nguyên Lâm Viên mát mẻ quanh năm.
+              AI và chuyên gia địa phương giúp bạn lọc bỏ bẫy du lịch,
+              chỉ giữ lại những trải nghiệm đáng giá nhất.
             </p>
           </FadeIn>
 
@@ -65,7 +65,7 @@ export function Hero() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email cua ban"
+                  placeholder="Email của bạn"
                   required
                   className="flex-1 px-5 py-3.5 bg-cream/10 backdrop-blur-sm border border-cream/20 rounded-sm text-cream placeholder:text-cream-deep/50 font-sans text-body focus:outline-none focus:border-terra-light/50 transition-colors"
                 />
@@ -73,7 +73,7 @@ export function Hero() {
                   type="submit"
                   className="px-6 py-3.5 bg-terra text-cream font-sans text-caption uppercase font-medium tracking-wide rounded-sm hover:bg-terra-light transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap"
                 >
-                  Early Access
+                  Nhận truy cập sớm
                   <ArrowRight size={14} />
                 </button>
               </form>
@@ -84,7 +84,7 @@ export function Hero() {
                 className="px-6 py-4 bg-cream/10 backdrop-blur-sm border border-cream/20 rounded-sm max-w-md"
               >
                 <p className="text-cream font-sans text-body">
-                  Cam on ban! Chung toi se lien he som nhat.
+                  Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm nhất.
                 </p>
               </motion.div>
             )}
@@ -92,7 +92,7 @@ export function Hero() {
 
           <FadeIn delay={1.0}>
             <p className="text-caption font-sans text-cream-deep/50 mt-4">
-              Mien phi. Khong spam. Huy bat ky luc nao.
+              Miễn phí. Không spam. Hủy bất kỳ lúc nào.
             </p>
           </FadeIn>
         </div>

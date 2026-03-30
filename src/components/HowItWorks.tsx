@@ -6,20 +6,20 @@ const steps = [
   {
     icon: Bot,
     number: '01',
-    title: 'AI Thu thap',
-    description: 'Firecrawl quet hang ngan nguon tu blog, review, mang xa hoi. AI phan tich, loc bo dia diem dinh phot va gian nhan cam xuc.',
+    title: 'AI Phân tích đa tầng',
+    description: 'Hệ thống phân tích đa tầng, quét sạch lớp vỏ quảng cáo để chạm đến những giá trị cốt lõi nhất của từng địa điểm.',
   },
   {
     icon: Users,
     number: '02',
-    title: 'Chuyen gia Giam tuyen',
-    description: 'KOL va Local Experts xac minh, them goc nhin ca nhan. Chi nhung dia diem dat chuan moi xuat hien tren DOC.',
+    title: 'Giám tuyển chuyên gia',
+    description: 'Mạng lưới chuyên gia bản địa và nhà phê bình độc lập thẩm định từng chi tiết — từ nguồn gốc nguyên liệu đến câu chuyện đằng sau mỗi không gian. Chỉ những địa điểm vượt qua quy trình giám tuyển nghiêm ngặt mới xuất hiện trên DỐC.',
   },
   {
     icon: Compass,
     number: '03',
-    title: 'Ban Trai nghiem',
-    description: 'Tim kiem theo cam xuc, nhan lo trinh ca nhan hoa. Moi chuyen di Da Lat tro thanh mot hanh trinh dich thuc.',
+    title: 'Trải nghiệm độc bản',
+    description: 'Khám phá Đà Lạt theo cách riêng của bạn — lộ trình được thiết kế dựa trên cảm xúc, nhịp sống và gu thẩm mỹ cá nhân. Mỗi hành trình là một bản độc bản, không lặp lại.',
   },
 ]
 
@@ -30,13 +30,13 @@ export function HowItWorks() {
         <div className="max-w-3xl mx-auto text-center mb-16 lg:mb-22">
           <FadeIn>
             <p className="text-overline uppercase font-sans text-terra tracking-widest mb-4">
-              Cach hoat dong
+              Cách hoạt động
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="text-headline font-serif text-foreground mb-6">
-              Tu du lieu tho den<br />
-              <span className="italic text-pine-light">trai nghiem tinh hoa</span>
+              Từ dữ liệu thô đến<br />
+              <span className="italic text-pine-light">trải nghiệm tinh hoa</span>
             </h2>
           </FadeIn>
         </div>

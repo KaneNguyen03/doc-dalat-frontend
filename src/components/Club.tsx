@@ -4,18 +4,18 @@ import { Crown, MapPin, Gift } from 'lucide-react'
 const perks = [
   {
     icon: Crown,
-    title: 'Uu tien truy cap',
-    description: 'Xem truoc dia diem moi nhat truoc tat ca, duoc giam tuyen rieng boi chuyen gia hang dau.',
+    title: 'Ưu tiên truy cập',
+    description: 'Xem trước địa điểm mới nhất trước tất cả, được giảm tuyển riêng bởi chuyên gia hàng đầu.',
   },
   {
     icon: MapPin,
-    title: 'Lo trinh ca nhan',
-    description: 'AI tao lo trinh toi uu theo gu, thoi gian va ngan sach cua rieng ban.',
+    title: 'Lộ trình cá nhân',
+    description: 'AI tạo lộ trình tối ưu theo gu, thời gian và ngân sách của riêng bạn.',
   },
   {
     icon: Gift,
-    title: 'Uu dai doc quyen',
-    description: 'Gia dac biet tai cac doi tac premium — homestay, nha hang, tour ban dia.',
+    title: 'Ưu đãi độc quyền',
+    description: 'Giá đặc biệt tại các đối tác premium — homestay, nhà hàng, tour bản địa.',
   },
 ]
 
@@ -34,7 +34,7 @@ export function Club() {
         <div className="max-w-3xl mx-auto text-center mb-16 lg:mb-22">
           <FadeIn>
             <p className="text-overline uppercase font-sans text-terra-light tracking-widest mb-4">
-              Sap ra mat
+              Sắp ra mắt
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
@@ -44,8 +44,8 @@ export function Club() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-body-lg font-sans text-cream-deep/70 max-w-lg mx-auto leading-relaxed">
-              Hoi thanh vien danh cho nhung nguoi that su yeu Da Lat.
-              Trai nghiem duoc ca nhan hoa, uu dai doc quyen, va mot cong dong co gu.
+              Hội thành viên dành cho những người thật sự yêu Đà Lạt.
+              Trải nghiệm được cá nhân hóa, ưu đãi độc quyền, và một cộng đồng có gu.
             </p>
           </FadeIn>
         </div>
@@ -75,7 +75,7 @@ export function Club() {
               className="inline-flex items-center gap-2 px-8 py-4 bg-terra text-cream font-sans text-caption uppercase font-medium tracking-wide rounded-sm hover:bg-terra-light transition-colors duration-300"
             >
               <Crown size={14} />
-              Dang ky som de nhan uu dai dac biet
+              Đăng ký sớm để nhận ưu đãi đặc biệt
             </a>
           </div>
         </FadeIn>

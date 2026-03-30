@@ -2,13 +2,13 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FadeIn, StaggerContainer, staggerChild } from './animations'
 
-const vibes = ['Tat ca', 'Lang man', 'Chill', 'Ban dia'] as const
+const vibes = ['Tất cả', 'Lãng mạn', 'Chill', 'Bản địa'] as const
 
 type Vibe = typeof vibes[number]
 
 interface Spot {
   name: string
-  vibe: Exclude<Vibe, 'Tat ca'>
+  vibe: Exclude<Vibe, 'Tất cả'>
   tagline: string
   image: string
   score: number
@@ -17,31 +17,52 @@ interface Spot {
 const spots: Spot[] = [
   {
     name: 'The Married Beans',
-    vibe: 'Lang man',
-    tagline: 'Ca phe an minh giua vuon hong, noi thoi gian cham lai.',
+    vibe: 'Lãng mạn',
+    tagline: 'Hai con người, một tình yêu, và hàng nghìn mẻ rang thủ công — nơi mỗi tách cà phê là lời tỏ tình thầm lặng với cao nguyên.',
     image: '/images/vibe-romantic.png',
     score: 9.2,
   },
   {
-    name: 'An Nhien Homestay',
-    vibe: 'Chill',
-    tagline: 'Thuc day voi may mu va tieng chim, giua rung thong bat ngan.',
-    image: '/images/vibe-chill.png',
-    score: 8.8,
+    name: 'Ana Mandara Villas Dalat',
+    vibe: 'Lãng mạn',
+    tagline: 'Mười bảy biệt thự Pháp cổ từ thập niên 1920, được phục dựng tỉ mỉ giữa rừng thông — giữ nguyên hơi thở của một Đà Lạt đã khuất sau lớp sương mù thời gian.',
+    image: '/images/vibe-romantic.png',
+    score: 9.5,
   },
   {
-    name: 'Cho Da Lat buoi som',
-    vibe: 'Ban dia',
-    tagline: 'Noi tinh hoa nong san cao nguyen hoi tu, tu 4 gio sang.',
-    image: '/images/vibe-local.png',
+    name: 'La Viet Coffee',
+    vibe: 'Chill',
+    tagline: 'Từ nông trại đến tách cà phê, La Viet viết lại định nghĩa specialty coffee Việt Nam bằng sự kiên nhẫn và tiêu chuẩn không thỏa hiệp.',
+    image: '/images/vibe-chill.png',
     score: 9.5,
+  },
+  {
+    name: 'Chênh Café',
+    vibe: 'Chill',
+    tagline: 'Ẩn mình cuối con dốc vắng, không biển hiệu lớn — chỉ tiếng gió thông reo và một khoảng lặng đủ để nghe lại chính mình.',
+    image: '/images/vibe-chill.png',
+    score: 9.0,
+  },
+  {
+    name: 'K\'Ho Coffee',
+    vibe: 'Bản địa',
+    tagline: 'Nơi những hạt Arabica kể câu chuyện về vùng đất bazan và tâm huyết của người nông dân K\'Ho — specialty coffee ở dạng nguyên bản nhất.',
+    image: '/images/vibe-local.png',
+    score: 9.6,
+  },
+  {
+    name: 'Lẩu bò Quán Gỗ',
+    vibe: 'Bản địa',
+    tagline: 'Ba thế hệ giữ lửa cho nồi nước dùng hầm xương mười hai tiếng — hương vị lẩu bò trứ danh mà người Đà Lạt gốc trao truyền.',
+    image: '/images/vibe-local.png',
+    score: 9.4,
   },
 ]
 
 export function VibePreview() {
-  const [activeVibe, setActiveVibe] = useState<Vibe>('Tat ca')
+  const [activeVibe, setActiveVibe] = useState<Vibe>('Tất cả')
 
-  const filtered = activeVibe === 'Tat ca'
+  const filtered = activeVibe === 'Tất cả'
     ? spots
     : spots.filter((s) => s.vibe === activeVibe)
 
@@ -51,17 +72,17 @@ export function VibePreview() {
         <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
           <FadeIn>
             <p className="text-overline uppercase font-sans text-terra tracking-widest mb-4">
-              Kham pha
+              Khám phá
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="text-headline font-serif text-foreground mb-6">
-              Tim theo <span className="italic text-pine-light">cam xuc</span>
+              Tìm theo <span className="italic text-pine-light">cảm xúc</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-body-lg font-sans text-ink-soft max-w-lg mx-auto">
-              Moi nguoi co mot &ldquo;gu&rdquo; rieng. DOC giup ban tim dung khong gian phu hop voi cam xuc hien tai.
+              Mỗi người có một &ldquo;gu&rdquo; riêng. DỐC giúp bạn tìm đúng không gian đồng điệu với trạng thái cảm xúc hiện tại.
             </p>
           </FadeIn>
         </div>
