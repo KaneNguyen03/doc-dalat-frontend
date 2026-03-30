@@ -21,9 +21,9 @@ export function Solution() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-body-lg font-sans text-ink-soft mb-10 max-w-lg leading-relaxed">
-                Kết hợp trí tuệ nhân tạo với sự giám tuyển từ các chuyên gia bản địa uy tín,
-                DỐC tạo ra một bộ lọc thông minh loại bỏ mọi tiếng ồn —
-                chỉ giữ lại những trải nghiệm Đà Lạt chân thực và đáng giá nhất.
+                Đi du lịch không nên là cuộc chơi may rủi. DỐC mang đến sự an tâm tuyệt đối — 
+                AI quét sạch mọi địa điểm bẩn, chặt chém, và xô bồ khỏi hành trình của bạn. 
+                Chỉ những trải nghiệm tinh hoa, được giám tuyển kỹ càng, mới xứng đáng với thờii gian quý báu của bạn tại Đà Lạt.
               </p>
             </FadeIn>
 
@@ -36,7 +36,7 @@ export function Solution() {
                   <div>
                     <h3 className="font-serif text-lg text-foreground mb-1">Phân tích & Thanh lọc</h3>
                     <p className="font-sans text-body text-ink-soft">
-                      Thuật toán đa tầng tự động nhận diện các tín hiệu tiêu cực — từ review giả, seeding ảo đến phản hồi thực tế về vệ sinh và chất lượng dịch vụ.
+                      Thuật toán đa tầng quét qua hàng nghìn review thô, nhận diện ngay lập tức các dấu hiệu cảnh báo — từ vệ sinh kém, giá cắt cổ, đến những nơi đã mất đi linh hồn vì thương mại hóa.
                     </p>
                   </div>
                 </div>
@@ -50,7 +50,7 @@ export function Solution() {
                   <div>
                     <h3 className="font-serif text-lg text-foreground mb-1">Bản đồ cảm xúc</h3>
                     <p className="font-sans text-body text-ink-soft">
-                      Mỗi địa điểm được phân loại theo hệ thống cảm xúc độc quyền — Lãng mạn, Tĩnh lặng, Bản địa, Nghệ thuật — để mỗi lựa chọn đều đồng điệu với trạng thái của bạn.
+                      Mỗi địa điểm được phân loại theo hệ thống cảm xúc độc quyền — Lãng mạn, Chill, Bản địa — để mỗi lựa chọn đều đồng điệu với trạng thái của bạn, không phải của đám đông.
                     </p>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ export function Solution() {
                   <div>
                     <h3 className="font-serif text-lg text-foreground mb-1">Giám tuyển độc lập</h3>
                     <p className="font-sans text-body text-ink-soft">
-                      Mạng lưới chuyên gia bản địa và nhà phê bình ẩm thực thẩm định lần cuối — không tài trợ, không quảng cáo, chỉ có sự trung thực.
+                      Mạng lưới chuyên gia bản địa và nhà phê bình ẩm thực thẩm định từng chi tiết — không tài trợ, không quảng cáo, chỉ có sự trung thực tuyệt đối.
                     </p>
                   </div>
                 </div>
@@ -81,18 +81,20 @@ export function Solution() {
                 {/* Simulated filter UI */}
                 <div className="space-y-5">
                   <div className="flex items-center gap-3 pb-5 border-b border-border">
-                    <div className="w-2 h-2 rounded-full bg-terra" />
+                    <div className="w-2 h-2 rounded-full bg-terra animate-pulse" />
                     <span className="font-sans text-overline uppercase text-ink-muted tracking-widest">Bộ lọc Gu đang hoạt động</span>
                   </div>
 
                   {/* Filter result items */}
                   {[
-                    { name: 'The Married Beans', vibe: 'Lãng mạn', score: 9.2, status: 'approved', reason: '' },
-                    { name: 'Quán lẩu khu Hòa Bình', vibe: '—', score: 3.1, status: 'rejected', reason: 'Vệ sinh kém' },
-                    { name: 'K\'Ho Coffee', vibe: 'Bản địa', score: 9.6, status: 'approved', reason: '' },
-                    { name: 'Cafe Checkin Đồi Cù', vibe: '—', score: 2.8, status: 'rejected', reason: 'Thương mại hóa quá mức' },
-                    { name: 'La Viet Coffee', vibe: 'Chill', score: 9.5, status: 'approved', reason: '' },
-                    { name: 'Nhà hàng Phố Tourist', vibe: '—', score: 2.3, status: 'rejected', reason: 'Phản hồi tiêu cực từ người bản địa' },
+                    { name: 'The Married Beans', vibe: 'Lãng mạn', score: 9.4, status: 'approved', reason: 'Di sản rang xay thủ công' },
+                    { name: 'Chợ Đêm Đà Lạt', vibe: '—', score: 2.1, status: 'rejected', reason: 'Chặt chém, hàng kém chất lượng' },
+                    { name: 'Émai Dalat', vibe: 'Lãng mạn', score: 9.6, status: 'approved', reason: 'Tinh tế, kiến trúc Pháp cổ' },
+                    { name: 'Buffet rau đại trà', vibe: '—', score: 1.8, status: 'rejected', reason: 'Vệ sinh cảnh báo đỏ' },
+                    { name: 'K\'Ho Coffee', vibe: 'Bản địa', score: 9.7, status: 'approved', reason: 'Bản địa nguyên bản, cà phê đặc sản' },
+                    { name: 'Quán nướng xô bồ khu Hòa Bình', vibe: '—', score: 2.4, status: 'rejected', reason: 'Ồn ào, khói, thiếu vệ sinh' },
+                    { name: 'La Viet Coffee', vibe: 'Chill', score: 9.5, status: 'approved', reason: 'Specialty coffee chuẩn quốc tế' },
+                    { name: 'Cafe check-in Đồi Cù', vibe: '—', score: 2.6, status: 'rejected', reason: 'Thương mại hóa quá mức' },
                   ].map((item) => (
                     <div
                       key={item.name}
@@ -111,7 +113,9 @@ export function Solution() {
                             {item.name}
                           </span>
                           {item.reason && (
-                            <span className="block text-caption font-sans text-destructive/70">
+                            <span className={`block text-caption font-sans ${
+                              item.status === 'approved' ? 'text-pine/70' : 'text-destructive/70'
+                            }`}>
                               {item.reason}
                             </span>
                           )}
@@ -133,8 +137,8 @@ export function Solution() {
                   ))}
 
                   <div className="pt-4 border-t border-border flex justify-between items-center">
-                    <span className="text-caption font-sans text-ink-muted">6 địa điểm đã quét</span>
-                    <span className="text-caption font-sans font-medium text-pine">3 đạt chuẩn DỐC</span>
+                    <span className="text-caption font-sans text-ink-muted">8 địa điểm đã quét</span>
+                    <span className="text-caption font-sans font-medium text-pine">4 đạt chuẩn DỐC</span>
                   </div>
                 </div>
               </div>

@@ -18,44 +18,44 @@ const spots: Spot[] = [
   {
     name: 'The Married Beans',
     vibe: 'Lãng mạn',
-    tagline: 'Hai con người, một tình yêu, và hàng nghìn mẻ rang thủ công — nơi mỗi tách cà phê là lời tỏ tình thầm lặng với cao nguyên.',
-    image: '/images/vibe-romantic.png',
-    score: 9.2,
-  },
-  {
-    name: 'Ana Mandara Villas Dalat',
-    vibe: 'Lãng mạn',
-    tagline: 'Mười bảy biệt thự Pháp cổ từ thập niên 1920, được phục dựng tỉ mỉ giữa rừng thông — giữ nguyên hơi thở của một Đà Lạt đã khuất sau lớp sương mù thời gian.',
-    image: '/images/vibe-romantic.png',
+    tagline: 'Ngôi nhà gỗ cổ kính từ năm 1954, mùi cà phê rang thủ công len lỏi trong từng kẽ gỗ — nơi hai con ngườii gìn giữ tình yêu qua hàng nghìn mẻ rang, mỗi tách cà phê là một lờii tỏ tình thầm lặng với cao nguyên.',
+    image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
     score: 9.5,
-  },
-  {
-    name: 'La Viet Coffee',
-    vibe: 'Chill',
-    tagline: 'Từ nông trại đến tách cà phê, La Viet viết lại định nghĩa specialty coffee Việt Nam bằng sự kiên nhẫn và tiêu chuẩn không thỏa hiệp.',
-    image: '/images/vibe-chill.png',
-    score: 9.5,
-  },
-  {
-    name: 'Chênh Café',
-    vibe: 'Chill',
-    tagline: 'Ẩn mình cuối con dốc vắng, không biển hiệu lớn — chỉ tiếng gió thông reo và một khoảng lặng đủ để nghe lại chính mình.',
-    image: '/images/vibe-chill.png',
-    score: 9.0,
   },
   {
     name: 'K\'Ho Coffee',
     vibe: 'Bản địa',
-    tagline: 'Nơi những hạt Arabica kể câu chuyện về vùng đất bazan và tâm huyết của người nông dân K\'Ho — specialty coffee ở dạng nguyên bản nhất.',
-    image: '/images/vibe-local.png',
+    tagline: 'Dưới chân núi LangBiang, bàn tay ngưởi K\'Ho chọn từng hạt cà phê chín đỏ — specialty coffee từ vùng đất bazan thiêng liêng, kể câu chuyện về lòng kiên nhẫn và tâm huyết của những ngưởi nông dân bản địa.',
+    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+    score: 9.7,
+  },
+  {
+    name: 'Émai Dalat',
+    vibe: 'Lãng mạn',
+    tagline: 'Biệt thự Pháp cổ từ những năm 1930 được phục dựng tỉ mỉ, mỗi góc nhà là một câu chuyện — nơi ánh sáng chiều len lỏi qua ô cửa sổ kính màu, hương vị Đà Lạt xưa được gìn giữ qua từng món ăn và ly trà chiều.',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
     score: 9.6,
+  },
+  {
+    name: 'An Nhiên Homestay',
+    vibe: 'Chill',
+    tagline: 'Ngôi nhà gỗ nguyên bản ẩn mình giữa rừng thông, không wifi, không ti vi — chỉ có tiếng chim hót buổi sớm, hơi sương mù mờ ảo qua ô cửa sổ gỗ, và khoảng lặng đủ để bạn nghe lại chính mình.',
+    image: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800&q=80',
+    score: 9.4,
+  },
+  {
+    name: 'Tiệm cà phê Ba Quả Đồi',
+    vibe: 'Chill',
+    tagline: 'Ba ngôi nhà gỗ nằm lặng lẽ trên đồi, nhìn ra biển mây bồng bềnh — nơi nhạc Trịnh Công Sơn vang vọng trong không gian tĩnh lặng, mờii bạn ngồi lại để cảm nhận Đà Lạt chậm rãi.',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&q=80',
+    score: 9.3,
   },
   {
     name: 'Lẩu bò Quán Gỗ',
     vibe: 'Bản địa',
-    tagline: 'Ba thế hệ giữ lửa cho nồi nước dùng hầm xương mười hai tiếng — hương vị lẩu bò trứ danh mà người Đà Lạt gốc trao truyền.',
-    image: '/images/vibe-local.png',
-    score: 9.4,
+    tagline: 'Ba thế hệ gìn giữ ngọn lửa cho nồi nước dùng hầm xương mườii hai tiếng — hương vị lẩu bò trứ danh Ba Toa mà ngườii Đà Lạt gốc trao truyền, không menu sang trọng, chỉ có tình nghĩa chân thành.',
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80',
+    score: 9.2,
   },
 ]
 
@@ -82,7 +82,7 @@ export function VibePreview() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-body-lg font-sans text-ink-soft max-w-lg mx-auto">
-              Mỗi người có một &ldquo;gu&rdquo; riêng. DỐC giúp bạn tìm đúng không gian đồng điệu với trạng thái cảm xúc hiện tại.
+              Mỗi ngườii có một &ldquo;gu&rdquo; riêng. DỐC giúp bạn tìm đúng không gian đồng điệu với trạng thái cảm xúc hiện tại.
             </p>
           </FadeIn>
         </div>

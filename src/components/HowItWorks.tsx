@@ -7,19 +7,19 @@ const steps = [
     icon: Bot,
     number: '01',
     title: 'AI Phân tích đa tầng',
-    description: 'Hệ thống phân tích đa tầng, quét sạch lớp vỏ quảng cáo để chạm đến những giá trị cốt lõi nhất của từng địa điểm.',
+    description: 'Hệ thống AI của DỐC quét qua hàng triệu dữ liệu thô — từ review, hình ảnh đến phản hồi thực tế — để nhận diện các tín hiệu cảnh báo: vệ sinh kém, giá cắt cổ, seeding ảo. Chỉ những địa điểm sạch sẽ, chân thực mới được chuyển sang vòng thẩm định tiếp theo.',
   },
   {
     icon: Users,
     number: '02',
     title: 'Giám tuyển chuyên gia',
-    description: 'Mạng lưới chuyên gia bản địa và nhà phê bình độc lập thẩm định từng chi tiết — từ nguồn gốc nguyên liệu đến câu chuyện đằng sau mỗi không gian. Chỉ những địa điểm vượt qua quy trình giám tuyển nghiêm ngặt mới xuất hiện trên DỐC.',
+    description: 'Mạng lưới chuyên gia bản địa và nhà phê bình ẩm thực độc lập thẩm định từng chi tiết — từ nguồn gốc nguyên liệu, quy trình phục vụ đến câu chuyện đằng sau mỗi không gian. Không tài trợ, không quảng cáo, chỉ có sự trung thực tuyệt đối.',
   },
   {
     icon: Compass,
     number: '03',
-    title: 'Trải nghiệm độc bản',
-    description: 'Khám phá Đà Lạt theo cách riêng của bạn — lộ trình được thiết kế dựa trên cảm xúc, nhịp sống và gu thẩm mỹ cá nhân. Mỗi hành trình là một bản độc bản, không lặp lại.',
+    title: 'Trải nghiệm tinh hoa',
+    description: 'Mỗi lộ trình được thiết kế riêng biệt dựa trên cảm xúc, nhịp sống và gu thẩm mỹ cá nhân của bạn. Không phải đám đông, không phải checklist — mà là những khoảnh khắc đồng điệu với chính bạn tại Đà Lạt.',
   },
 ]
 
